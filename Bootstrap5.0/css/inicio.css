@@ -243,19 +243,18 @@ header .nome h3{
     width: 30px;
     height: 30px;
     transform: translateX(20px) translateY(-20px);
-
   }
   .menu .side-bar .foto-perfil{
     top:0;
     left: 0;
-    transform: scale(0.7) translateY(-20%);
+    transform: scale(0.7) translateY(0%);
   }
   .cidades{
-    transform: scale(0.7) translateY(25px);
+    transform: scale(0.7) translateY(70px);
   }
   .menu .side-bar .design{
     font-size: 1em;
-    transform: translateY(-150px);
+    transform: translateY(-10px);
   }
   .social {
     justify-content: space-between;
