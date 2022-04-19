@@ -190,9 +190,9 @@ header .nome h3{
  *
  * ------------------------------------------------------------------- 
 */
-.menu .side-bar h2{
+.cidades{
   font-size: 24px;
-  display: flex;
+  display: absolute;
   text-align: center;
   justify-content: center;
   pointer-events: none;
@@ -250,9 +250,8 @@ header .nome h3{
     left: 0;
     transform: scale(0.7) translateY(-20%);
   }
-  .menu .side-bar h2,
-  .menu .side-bar h3{
-    font-size: 1em;
+  .cidades{
+    transform: scale(0.7) translateY(25px);
   }
   .menu .side-bar .design{
     font-size: 1em;
