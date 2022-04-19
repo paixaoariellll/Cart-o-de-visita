@@ -101,7 +101,7 @@ header .nome h3{
 .text h3 {
   top: 50%;
   padding: 20px;
-  position: relative;
+  position: relative; 
   flex-wrap: wrap;
   display: flex;
   text-align: center;
@@ -227,17 +227,14 @@ header .nome h3{
   .showcase header {
     padding: 40px;
   }
-  .text h2 {
-    font-size: 3em;
-    color:rgb(255, 255, 255) !important;
-  }
   .text h3 {
-    font-size: 2em;
+    font-size: 3em;
     transform: translateX(35%);
     color:rgb(255, 255, 255) !important;
    }
 }
 @media (max-width: 505px) {
+  
   .toggle{
     width: 30px;
     height: 30px;
@@ -248,10 +245,18 @@ header .nome h3{
     transform: translateX(20px) translateY(-20px);
 
   }
+  .menu .side-bar .foto-perfil{
+    top:0;
+    left: 0;
+    transform: scale(0.7) translateY(-20%);
+  }
   .menu .side-bar h2,
-  .menu .side-bar h3,
+  .menu .side-bar h3{
+    font-size: 2em;
+  }
   .menu .side-bar .design{
     font-size: 1em;
+    transform: translateY(-150px);
   }
   .social {
     justify-content: space-between;
