@@ -234,7 +234,9 @@ header .nome h3{
    }
 }
 @media (max-width: 505px) {
-  
+  .showcase{
+    position: fixed;
+  }
   .toggle{
     width: 30px;
     height: 30px;
@@ -254,7 +256,7 @@ header .nome h3{
   }
   .menu .side-bar .design{
     font-size: 1em;
-    transform: translateY(-60px);
+    transform: translateY(-80px);
   }
   .social {
     justify-content: space-between;
