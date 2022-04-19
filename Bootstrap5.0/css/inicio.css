@@ -234,6 +234,9 @@ header .nome h3{
    }
 }
 @media (max-width: 505px) {
+  .menu{
+    position: fixed;
+  }
   .showcase{
     position: fixed;
   }
