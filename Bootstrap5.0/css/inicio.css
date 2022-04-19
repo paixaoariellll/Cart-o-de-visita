@@ -1,0 +1,282 @@
+
+/**  desenvolvido por - Ariel Paixão -
+ * ===================================================================
+ * 0. fonts
+ * 1. header
+ * 2. section
+ * 3. text - centralized 
+ * 4. icons - social
+ * 5. menu - side
+ * 6. menu - side - text
+ * 7. medias - query
+ * 8. fim
+ * ------------------------------------------------------------------- 
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/** 
+ * ===================================================================
+ * 1. header
+ *
+ * ------------------------------------------------------------------- 
+*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/** 
+ * ===================================================================
+ * 2. section 
+ *
+ * ------------------------------------------------------------------- 
+*/
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url(../imagens/estrada-vazia-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 2;
+  transition: 1.5s;
+
+}
+.showcase.active {
+  right: 300px;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+header h3{
+  color: #fff;
+}
+header .nome h3{
+  color: #000;
+}
+
+/** 
+ * ===================================================================
+ * 3. text - centralized
+ *
+ * ------------------------------------------------------------------- 
+*/
+.text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.text h3 {
+  top: 50%;
+  padding: 20px;
+  position: relative;
+  flex-wrap: wrap;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 5em;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1em;
+  transition: 10s;
+  text-transform: uppercase;
+  transform: translateX(35%);
+}
+
+
+/** 
+ * ===================================================================
+ *  4. icons - social
+ *
+ * ------------------------------------------------------------------- 
+*/
+.social {
+  padding:20px;
+  position: absolute;
+  z-index: 10;
+  bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  left: 40%;
+  transition: 5s;
+  transform: translateX(-19%);
+  filter: invert(1);
+}
+.social a {
+  align-items: center;
+  position: relative;
+  display:flex;
+  transform: scale(0.8);
+  transition: 2s;
+  justify-content: space-between;
+}
+.social a:hover {
+  transform: scale(1.2) translateY(-20px) ;
+}
+
+/** 
+ * ===================================================================
+ * 5. menu - side
+ *
+ * ------------------------------------------------------------------- 
+*/
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+/** 
+ * ===================================================================
+ * 6. menu - side - text 
+ *
+ * ------------------------------------------------------------------- 
+*/
+.menu .side-bar h2{
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.menu .side-bar h3{
+  display: flex;
+  text-align: center;
+  justify-content: center;  
+  font-size: 24px;
+  pointer-events: none;
+}
+.design{
+  font-size: 14px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/** 
+ * ===================================================================
+ * 7. medias - query 
+ *
+ * ------------------------------------------------------------------- 
+*/
+@media (max-width: 991px) {
+  
+  header h3 {
+    transform: translateX(0%);
+    color:black !important;
+   }
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+  .text h2 {
+    font-size: 3em;
+    color:rgb(255, 255, 255) !important;
+  }
+  .text h3 {
+    font-size: 2em;
+    transform: translateX(35%);
+    color:rgb(255, 255, 255) !important;
+   }
+}
+@media (max-width: 505px) {
+  .toggle{
+    width: 30px;
+    height: 30px;
+  }
+  .toggle.active{
+    width: 30px;
+    height: 30px;
+    transform: translateX(20px) translateY(-20px);
+
+  }
+  .menu .side-bar h2,
+  .menu .side-bar h3,
+  .menu .side-bar .design{
+    font-size: 1em;
+  }
+  .social {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: 2s;
+    transform: translateX(-19%);
+    filter: invert(1);
+  }
+  header h3 {
+    transform: translateX(0%);
+    color:black !important;
+   }
+  .text h3 {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    font-size: 2em;
+    color: black !important;
+    transform: translateX(-30%);
+    transform: translateY(-310%);
+  }
+}
+
+/** 
+ * ===================================================================
+ * 8. fim
+ *
+ * ------------------------------------------------------------------- 
+*/
