@@ -252,14 +252,14 @@ header .nome h3{
   .menu .side-bar .foto-perfil{
     top:0;
     left: 0;
-    transform: scale(0.7) translateY(0%);
+    transform: scale(0.7) translateY(-10%);
   }
   .cidades{
-    transform: scale(0.7) translateY(100%);
+    transform: scale(0.7) translateY(80%);
   }
   .menu .side-bar .design{
     font-size: 1em;
-    transform: translateY(-80px);
+    transform: translateY(-90px);
   }
   .social {
     justify-content: space-between;
