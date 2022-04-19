@@ -250,11 +250,11 @@ header .nome h3{
     transform: scale(0.7) translateY(0%);
   }
   .cidades{
-    transform: scale(0.7) translateY(70px);
+    transform: scale(0.7) translateY(90px);
   }
   .menu .side-bar .design{
     font-size: 1em;
-    transform: translateY(-10px);
+    transform: translateY(10px);
   }
   .social {
     justify-content: space-between;
