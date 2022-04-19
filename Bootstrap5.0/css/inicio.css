@@ -61,7 +61,6 @@ header {
   background-attachment: fixed;
   z-index: 2;
   transition: 1.5s;
-
 }
 .showcase.active {
   right: 300px;
@@ -78,9 +77,11 @@ header {
 }
 header h3{
   color: #fff;
+  cursor: default;
 }
 header .nome h3{
   color: #000;
+  cursor: default;
 }
 
 /** 
@@ -112,6 +113,7 @@ header .nome h3{
   transition: 10s;
   text-transform: uppercase;
   transform: translateX(35%);
+  cursor: default;
 }
 
 
