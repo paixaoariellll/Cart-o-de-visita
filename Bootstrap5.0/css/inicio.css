@@ -283,6 +283,57 @@ header .nome h3{
     transform: translateY(-310%);
   }
 }
+@media (max-width: 330px) {
+  .menu{
+    position: fixed;
+  }
+  .showcase{
+    position: fixed;
+  }
+  .toggle{
+    width: 30px;
+    height: 30px;
+  }
+  .toggle.active{
+    width: 30px;
+    height: 30px;
+    transform: translateX(20px) translateY(-20px);
+  }
+  .menu .side-bar .foto-perfil{
+    top:0;
+    left: 0;
+    transform: scale(0.7) translateY(-10%);
+  }
+  .cidades{
+    transform: scale(0.7) translateY(80%);
+  }
+  .menu .side-bar .design{
+    font-size: 1em;
+    transform: translateY(-90px);
+  }
+  .social {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transition: 2s;
+    transform: translateX(-19%);
+    filter: invert(1);
+  }
+  header h3 {
+    transform: translateX(0%);
+    color:black !important;
+   }
+  .text h3 {
+    display: flex;
+    justify-content: end;
+    text-align: end;
+    font-size: 2em;
+    padding: 0px;
+    color: rgb(203, 15, 15) !important;
+    transform: translateX(-5px) translateY(-400%);
+    transition: 2s;
+  }
+}
 
 /** 
  * ===================================================================
